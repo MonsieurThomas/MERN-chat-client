@@ -19,7 +19,7 @@ export default function Chat() {
     connectToWs();
   }, [selectedUserId]);
   function connectToWs() {
-    const ws = new WebSocket('wss://mern-chat123-0e94574c3d11.herokuapp.com/');
+    const ws = new WebSocket('wss://chat-api-v5zt.onrender.com/');
     setWs(ws);
     ws.addEventListener('message', handleMessage);
     ws.addEventListener('close', () => {

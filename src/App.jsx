@@ -3,7 +3,7 @@ import {UserContextProvider} from "./UserContext";
 import Routes from "./Routes";
 
 function App() {
-  axios.defaults.baseURL = "https://mern-chat123-0e94574c3d11.herokuapp.com/";
+  axios.defaults.baseURL = "https://chat-api-v5zt.onrender.com/";
   axios.defaults.withCredentials = true;
   return (
     <UserContextProvider>
